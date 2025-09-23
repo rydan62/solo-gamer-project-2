@@ -10,6 +10,8 @@ TagManager:
   - trap
   - floor
   - ramp
+  - proj
+  - weapon
   layers:
   - Default
   - TransparentFX
