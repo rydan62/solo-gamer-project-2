@@ -2018,7 +2018,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1664163808
@@ -2681,7 +2681,7 @@ GameObject:
   - component: {fileID: 2009318120}
   - component: {fileID: 2009318127}
   m_Layer: 0
-  m_Name: player
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3060,7 +3060,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 748888784990689651, guid: 5fa7a13d165c99943ad91fa4be4006e9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.733
+      value: 6.01
       objectReference: {fileID: 0}
     - target: {fileID: 748888784990689651, guid: 5fa7a13d165c99943ad91fa4be4006e9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3093,6 +3093,10 @@ PrefabInstance:
     - target: {fileID: 3427630421328506530, guid: 5fa7a13d165c99943ad91fa4be4006e9, type: 3}
       propertyPath: m_Name
       value: rifle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3427630421328506530, guid: 5fa7a13d165c99943ad91fa4be4006e9, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

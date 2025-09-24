@@ -46,6 +46,7 @@ public class PlayerController : MonoBehaviour
         }
         interactray.origin = playerCam.transform.position;
         interactray.direction = playerCam.transform.forward;
+
         if (Physics.Raycast(interactray, out interactRay, interactDistance))
         {
             if (interactRay.collider.tag == "weapon")
@@ -105,8 +106,10 @@ public class PlayerController : MonoBehaviour
         if (pickupObj)
         {
             if (pickupObj.tag == "Weapon")
-                pickupObj.GetComponent<Weapon>().equip(this);
+                if (currentWeapon)
+                    pickupObj.GetComponent<Weapon>().equip(this);
         }
+        pickupObj = null;
     }
 
     public void Move(InputAction.CallbackContext context)

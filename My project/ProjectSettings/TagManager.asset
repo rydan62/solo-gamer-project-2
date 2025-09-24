@@ -11,7 +11,7 @@ TagManager:
   - floor
   - ramp
   - proj
-  - weapon
+  - Weapon
   layers:
   - Default
   - TransparentFX

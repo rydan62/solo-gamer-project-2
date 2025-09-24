@@ -5,12 +5,12 @@ public class BasicEnemyController : MonoBehaviour
 {
     NavMeshAgent agent;
     public int health = 200;
+    public int defense = 0;
+    public int magic_defense = 0;
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
     }
-
-    // Update is called once per frame
     void Update()
     {
         agent.destination = GameObject.Find("Player").transform.position;
@@ -18,7 +18,7 @@ public class BasicEnemyController : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "enemy")
+        if (collision.gameObject.tag == "proj")
         {
             health = 20 - health;
         }
