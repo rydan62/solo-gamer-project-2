@@ -260,13 +260,13 @@ MonoBehaviour:
   weaponName: rifle
   HoldToAttack: 1
   projLifespan: 2
-  projVelocity: 90000000
-  reloadCooldown: 1.5
+  projVelocity: 100
+  reloadCooldown: 0
   rof: 0.15
   fireModes: 0
   currentFireMode: 0
   clip: 0
-  clipSize: 30
+  clipSize: 0
   ammo: 0
   maxAmmo: 0
   ammoRefill: 0
