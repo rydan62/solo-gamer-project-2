@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().buildIndex >= 1)
         {
+            isPaused = false;
             pauseMenu = GameObject.FindGameObjectWithTag("ui_pause");
             player = GameObject.FindGameObjectWithTag("player").GetComponent<PlayerController>();
             player_health2 = GameObject.FindGameObjectWithTag("ui_health").GetComponent<Image>();
