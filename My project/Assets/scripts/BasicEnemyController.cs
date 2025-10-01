@@ -6,7 +6,6 @@ public class BasicEnemyController : MonoBehaviour
     NavMeshAgent agent;
     public int health = 200;
     public int defense = 0;
-    public int magic_defense = 0;
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
