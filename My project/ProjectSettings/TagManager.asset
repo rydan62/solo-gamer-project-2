@@ -14,6 +14,7 @@ TagManager:
   - Weapon
   - weapon
   - ui_health
+  - teehee
   layers:
   - Default
   - TransparentFX

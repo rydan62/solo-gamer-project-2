@@ -139,6 +139,10 @@ public class PlayerController : MonoBehaviour
             health = 20 - health;
         }
     }
-    
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "teehee")
+
+    }
 
 }
