@@ -22,8 +22,8 @@ public class PlayerController : MonoBehaviour
     public float jumpHeight = 10f;
     public float jumpRayDistance = 1.1f;
     public float interactDistance = 1f;
-    public int health = 200;
-    public int maxHealth = 200;
+    public int playerhealth = 200;
+    public int maxplayerHealth = 200;
     public bool attacking = false;
 
     private void Start()
@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
     }
     private void Update()
     {
-        if (health <= 0)
+        if (playerhealth <= 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
@@ -129,20 +129,18 @@ public class PlayerController : MonoBehaviour
     {
         if (other.tag == "trap")
         {
-            health = 20 - health;
+            playerhealth = 20 - playerhealth;
         }
     }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "enemy")
         {
-            health = 20 - health;
+            playerhealth = 20 - playerhealth;
+        }
+        if (collision.gameObject.tag == "trap(insta)")
+        {
+            playerhealth = maxplayerHealth * 5;
         }
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "teehee")
-
-    }
-
 }

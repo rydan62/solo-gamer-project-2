@@ -15,6 +15,7 @@ TagManager:
   - weapon
   - ui_health
   - teehee
+  - trap(insta)
   layers:
   - Default
   - TransparentFX
